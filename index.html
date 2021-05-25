@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-    <div class"navbar">
+    <div class="navbar">
         <div class="container">
             <a class="logo" href="#">Remember<span>That</span></a> 
-            <img id="mobile-cta" classs="mobile-menu" src="images/menu.svg" alt="Open navation">
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open navation">
             <nav>
-                <img id="mobile-exit"  classs="mobile-menu-exit"src="images/exit.svg" alt="Closenav">
+                <img id="mobile-exit"  class="mobile-menu-exit"src="images/exit.svg" alt="Closenav">
                 <ul class="primary-nav">
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">Features</a></li>
@@ -51,7 +51,7 @@
                 <li>Real Time collaboratgion</li>
                 <li>Other awesome features</li>
             </ul>
-            <img src="images//holding-phone.jpg" alt="Man holding phone">
+            <img src="https://assets.codepen.io/2621168/holding-phone.jpg" alt="Man holding phone">
         </div>
     </section>
     <section class="testimonials-section">
@@ -73,9 +73,10 @@
                     <cite>-Jane Doe</cite>
                 </li>
             </ul>
-        </div>
+        </div>        
     </section>
-    <section class="contact">
+
+    <section class="contact-section">
         <div class="container">
             <div class="contact-left">
                 <h2>contact</h2>
@@ -94,5 +95,17 @@
             </div>
         </div>
     </section>
+    <script>    
+    const mobileBtn= document.getElementById('mobile-cta')
+          nav = document.querySelector('nav');
+          mobileBtnExit= document.getElementById('mobile-exit')
+    
+    mobileBtn.addEventListener('click', ()=>{
+        nav.classList.add('menu-btn');        
+    })
+    mobileBtnExit.addEventListener('click', ()=>{
+        nav.classList.remove('menu-btn');    
+    })
+    </script>
 </body>
 </html>
