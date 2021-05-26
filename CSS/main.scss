@@ -9,6 +9,11 @@ body{
     background: #f2f2f2;
     margin:0;
     font-family: 'Poppins';
+}
+.navbar{
+    background-color: :white;
+    padding:1em;
+
     .logo{
         text-decoration: none;
         font-weight:bold;
@@ -86,12 +91,12 @@ section.feature-section{
 }
 ul.feature-list{
     margin:0;
-    padding-left: 0.1em;
+    padding-left: .1em;
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
     // veryverycool
     li{
-        font-size: 1em;
+        font-size: 1.1em;
         margin-bottom: 1em;
         margin-left:2em;
         position: relative;
@@ -116,15 +121,15 @@ ul.feature-list{
     color:white;
     li {
         background:#006bd6;
-        text-align:center;
-        padding:2em 1em;  
-        width:80%;
+        text-align: center;
+        padding: 2em 1em;  
+        width: 80%;
         margin:0 auto 5em auto;
         border-radius: 1em;
             img{
             width:5em;
             height:5em;
-            border:5px solid#006bd6;
+            border:5px soli zd #006bd6;
             border-radius: 50%;
             margin-top:-4.5em;
             }
@@ -248,7 +253,7 @@ nav{
 }
 @media only screen and (min-width: 1080px) {
     .container{
-        width:1080px;
+        width: 1080px;
         margin:0 auto;
     }
     section{
@@ -298,7 +303,7 @@ nav{
         bottom:-2em; 
     }
     .testimonials-section ul{
-        display:flex
+        display:flex;
         li {
             margin:0 1em;
         }    
